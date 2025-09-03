@@ -1,0 +1,173 @@
+   
+   body {
+  background: white;
+  text-align: center;
+}.gradient-text {
+        background: linear-gradient(to right, #eeb469, #d75277);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        size: 50px;
+
+    }
+    .cards{
+        display: flex;
+        justify-content: center;  
+        gap: 150px;
+       align-items: center;
+       flex-wrap: wrap; 
+       
+    }
+    .card1{
+        width: 200px;
+        height: 350px;
+        background-color: pink;
+         border-radius: 10px;
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding-bottom: 15px;
+         margin-top: 50px;
+         position: relative;
+         overflow: hidden
+    }
+    .card1:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .card2{
+        width: 200px;
+        height: 350px;
+        background-color: pink;
+        text-align: center;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content:center;
+         align-items: center;
+         padding-bottom: 15px;
+         margin-top: 50px;
+         position: relative;
+         overflow: hidden;
+    }
+    .card2:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .card3{
+        width: 200px;
+        height: 350px;
+        background-color: pink;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+         flex-direction: column; 
+         justify-content: center;
+         align-items: center;
+         padding-bottom: 15px;
+         margin-top: 50px;
+         position: relative;
+         overflow: hidden;
+    }
+    .card3:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+z-index: 2; /* فوق الدائرة */
+    }
+    .card1:hover .img {
+    border: 10px solid rgb(164, 137, 164);
+    }
+    .card2:hover .img {
+    border: 10px solid rgb(164, 137, 164);
+    }
+    .card3:hover .img {
+    border: 10px solid rgb(164, 137, 164);
+    }
+    .info{
+      margin-top: 20px;
+    }
+    .h{
+  color: purple;
+    }
+    .p{
+  color: black;
+    }
+    .cir{
+    position: absolute; 
+    top: -110px; /* out of card */
+    left: 50%;
+    transform: translateX(-50%);/*middle of card (column)*/
+    width: 220px;
+    height: 220px;
+    background-color: purple; 
+    border-radius: 50%; 
+    opacity: 0;/*Invisible until hover*/
+    z-index: 10;/*The circle appears above card*/
+     z-index: 1;
+    }
+    .card1:hover .cir {
+    opacity: 1;
+}
+    .card2:hover .cir {
+    opacity: 1;
+}
+    .card3:hover .cir {
+    opacity: 1;
+}
+.card-img-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer{
+     position: absolute;      
+    bottom: 0;                
+    left: 0;
+    width: 100%; 
+    margin-top: auto; 
+    background-color: purple;
+    padding: 8px ;
+     opacity: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card1:hover .footer{
+    opacity: 1;
+    pointer-events: auto;
+}
+.card2:hover .footer{
+    opacity: 1;
+    pointer-events: auto;
+}
+.card3:hover .footer{
+    opacity: 1;
+    pointer-events: auto;
+}
+    .footer-icons{
+      display: flex;              
+    justify-content: center;   
+    gap: 20px;                 
+    margin-bottom: 10px;
+    }
+    .icones{
+        width: 20px;
+        height: 20px;
+object-fit: contain;
+    }
+.icones:hover {
+   
+    filter: invert(29%) sepia(89%) saturate(7471%) hue-rotate(277deg) brightness(95%) contrast(97%);
+    /*استخدمنا filter مشان تقدر تاثر على صور الpng و jpg و الباقي هنن طريقة الحصول على درجة موف */
+
+}
